@@ -1,0 +1,176 @@
+==========================================TEST SUIT==========================================
+----------------------------------------------------------------------------------------------
+    ID: 1
+    Title: Pressed on "JButton" with numbers
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Left-click on the "JButton" with numbers;
+        -> Number must append on String in mutable "JTextField";
+        -> Left-click on the "JButton" named "<<" until the mutable "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: Number appropriate "JButton" name's must append on String in the mutable "JTextField";
+    * Actual result: Number appropriate "JButton" name's must append on String in the mutable "JTextField";
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+    ID: 2
+    Title: The presence of the "JButton" with name "." to enter a fractional number
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in the mutable "JTextField";
+        -> Left-click on the "JButton" with name ".";
+        -> "." must append on String in the mutable "JTextField";
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in the mutable "JTextField";
+        -> Left-click on the "JButton" named "<<" until the mutable "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: String with the fractional number in the mutable "JTextField";
+    * Actual result: String with the fractional number in the mutable "JTextField";
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+    ID: 3
+    Title: Addition operations with numbers;
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" with name "+";
+        -> String with number move from mutable JTextField to immutable JTextField;
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" with name "=";
+        -> Result print in the mutable "JTextField";
+        -> Left-click on the "JButton" named "<<" until the mutable "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: The true result of addition two numbers;
+    * Actual result: The true result of addition two numbers;
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+    ID: 4
+    Title: Subtraction operations with numbers;
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" with name "-";
+        -> String with number move from mutable JTextField to immutable JTextField;
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" with name "=";
+        -> Result print in the mutable "JTextField";
+        -> Left-click on the "JButton" named "<<" until the "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: True result subtraction of two numbers;
+    * Actual result: True result subtraction of two numbers;
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+    ID: 5
+    Title: Multiplication operations with numbers;
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" with name "*";
+        -> String with number move from mutable JTextField to immutable JTextField;
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" with name "=";
+        -> Result print in the mutable "JTextField";
+        -> Left-click on the "JButton" named "<<" until the "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: True result multiplication of two numbers;
+    * Actual result: True result multiplication of two numbers;
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+    ID: 6
+    Title: Division operations with numbers;
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" with name "/";
+        -> String with number move from mutable JTextField to immutable JTextField;
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" with name "=";
+        -> Result print in the mutable "JTextField";
+        -> Left-click on the "JButton" named "<<" until the "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: True result division of two numbers;
+    * Actual result: True result division of two numbers;
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+    ID: 7
+    Title: Operations with boundary values;
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Type in mutable "JTextField" value approximately or exactly equals 1,7×e+308 // 1,7×e-308;
+        -> Number must append on String in the mutable "JTextField";
+        -> Left-click on the "JButton" with name "+" or "*";
+        -> String with number move from mutable JTextField to immutable JTextField;
+        -> Left-click on the "JButton" with random number to collect the value allowing you to exceed
+            the limit values of the Double;
+        -> Number must append on String in mutable "JTextField";
+        -> Left-click on the "JButton" with name "=";
+        -> Result print in the mutable "JTextField";
+        -> Left-click on the "JButton" named "<<" until the "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: Result in the mutable "JTextField" equals "Infinity";
+    * Actual result: Result in the mutable "JTextField" equals "Infinity";
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+    ID: 8
+    Title: Operations with BIG values;
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Type in mutable "JTextField" value more than 1,7×e+308;
+        -> Number must append on String in the mutable "JTextField";
+        -> Left-click on the "JButton" with name "+"("-") or "*"("/");
+        -> String with number move from mutable JTextField to immutable JTextField;
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in mutable "JTextField";
+        -> Left-click on the "JButton" with name "=";
+        -> Result print in the mutable "JTextField";
+        -> Left-click on the "JButton" named "<<" until the "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: True result division of two numbers;
+    * Actual result: True result division of two numbers;
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+    ID: 9
+    Title: Operations with incorrect values;
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Type in mutable "JTextField" char or string;
+        -> Char or string must append on String in the mutable "JTextField";
+        -> Left-click on the "JButton" with name "+"("-") or "*"("/");
+        -> String with number move from mutable JTextField to immutable JTextField;
+        -> Type in mutable "JTextField" char or string;
+        -> Number must append on String in mutable "JTextField";
+        -> Left-click on the "JButton" with name "=";
+        -> Result print in the mutable "JTextField";
+        -> Left-click on the "JButton" named "<<" until the "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: Caught and handled exception with message (incorrect value) in the mutable "JTextField";
+    * Actual result: Caught and handled exception with message (incorrect value) in the mutable "JTextField";
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+    ID: 10
+    Title: Operations with incorrect values;
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Type in mutable "JTextField" char or string;
+        -> Char or string must append on String in the mutable "JTextField";
+        -> Left-click on the "JButton" with name "+"("-") or "*"("/");
+        -> String with number move from mutable JTextField to immutable JTextField;
+        -> Type in mutable "JTextField" char or string;
+        -> Number must append on String in mutable "JTextField";
+        -> Left-click on the "JButton" with name "=";
+        -> Result print in the mutable "JTextField";
+        -> Left-click on the "JButton" named "<<" until the "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: The application should continue to run;
+    * Actual result: The application should continue to run;
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+TO BE CONTINUED
