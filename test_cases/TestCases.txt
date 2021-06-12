@@ -1,0 +1,45 @@
+==========================================TEST SUIT==========================================
+----------------------------------------------------------------------------------------------
+    ID: 1
+    Title: Pressed on "JButton" with numbers
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Left-click on the "JButton" with numbers;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" named "<<" until the "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: Number appropriate "JButton" name's must append on String in "JTextField";
+    * Actual result: Number appropriate "JButton" name's must append on String in "JTextField";
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+    ID: 2
+    Title: The presence of the "JButton" with name "." to enter a fractional number
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" with name ".";
+        -> "." must append on String in "JTextField";
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" named "<<" until the "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: String with the fractional number in "JTextField";
+    * Actual result: String with the fractional number in "JTextField";
+    * Pass\Fail: Pass
+----------------------------------------------------------------------------------------------
+    ID: 3
+    Title: The presence of the "JButton" with name "." to enter a fractional number
+    Instruction:
+        -> Run application "Калькулятор alpha";
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" with name ".";
+        -> "." must append on String in "JTextField";
+        -> Left-click on the "JButton" with random number;
+        -> Number must append on String in "JTextField";
+        -> Left-click on the "JButton" named "<<" until the "JTextField" is cleared OR
+            Close and reopen application;
+    Expected result: String with the fractional number in "JTextField";
+    * Actual result: String with the fractional number in "JTextField";
+    * Pass\Fail: Pass
