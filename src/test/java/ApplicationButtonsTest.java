@@ -1,3 +1,4 @@
+import org.assertj.core.api.Assertions;
 import org.assertj.swing.core.GenericTypeMatcher;
 import org.assertj.swing.core.MouseButton;
 import org.assertj.swing.core.Robot;
@@ -36,7 +37,7 @@ public class ApplicationButtonsTest {
     }
 
     @Test
-    public void testButtonsNamesAndValues() {
+    public void testButtonsNamesAndValues() throws Exception {
         for(int i = 0; i < 10; i++) {
             mouseLeftClick(String.valueOf(i));
         }
@@ -45,7 +46,7 @@ public class ApplicationButtonsTest {
     }
 
     @Test
-    public void testDivisionOperation() {
+    public void testDivisionOperation() throws Exception {
         mouseLeftClick("2");
         mouseLeftClick("/");
         mouseLeftClick("1");
@@ -55,7 +56,7 @@ public class ApplicationButtonsTest {
     }
 
     @Test
-    public void testDivisionByZero() {
+    public void testDivisionByZero() throws Exception{
         mouseLeftClick("1");
         mouseLeftClick("/");
         mouseLeftClick("0");
@@ -64,7 +65,28 @@ public class ApplicationButtonsTest {
         Assert.assertEquals("Division by zero","NaN", line);
     }
 
-    public void mouseLeftClick(String num){
+//    @Test
+//    public void testDoubleClickOnEqualsSign() {
+//        try{
+//            mouseLeftClick("=");
+//            mouseLeftClick("=");
+//        }catch (Exception e) {
+//            Assertions.assertThatExceptionOfType(Exception.class);
+//        }
+//    }
+
+    @Test
+    public void testDoubleClickOnOperationButton() throws Exception{
+        mouseLeftClick("1");
+        mouseLeftClick("/");
+        mouseLeftClick("+");
+        mouseLeftClick("2");
+        mouseLeftClick("=");
+        String line = window.textBox().text();
+        Assert.assertEquals("Result","3", line);
+    }
+
+    public void mouseLeftClick(String num) throws Exception{
         window.button(new GenericTypeMatcher<JButton>(JButton.class) {
             @Override
             protected boolean isMatching(JButton jButton) {
